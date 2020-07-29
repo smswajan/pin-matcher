@@ -1,4 +1,4 @@
-//#region AllFunction
+// Start -- All the required functions
 function getRandomNo() {
     const randomNumber = Math.floor(1000 + Math.random() * 9000);
     getElement('randomNo').value = randomNumber;
@@ -48,18 +48,20 @@ function verification() {
     }
 }
 
-//#endregion
+// End -- All the required functions
 
-//#region Variable
+
+// Start -- Variables
 const numberBtn = document.querySelectorAll('[data-number]');
 const deleteBtn = document.querySelector('[data-del]');
 const clearBtn = document.querySelector('[data-clear]');
 const subBtn = getElement('submitBtn');
 const section = document.getElementsByClassName('notify');
 
-//#endregion
+// End -- Variables
 
-//#region Button Click
+
+// Start -- EventListeners
 numberBtn.forEach(button => {
     button.addEventListener('click', () => {
         appendNumber(button.innerText);
@@ -77,5 +79,4 @@ clearBtn.addEventListener('click', button => {
 subBtn.addEventListener('click', () => {
     verification();
 })
-
-//#endregion
+// End -- EventListeners
