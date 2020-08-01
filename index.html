@@ -13,12 +13,15 @@
 <body>
     <div class="container">
         <div class="row">
+            <!-- Random Pin Generator -->
             <div class="col-md-6">
                 <div class="pin-generator half-width">
                     <input id="randomNo" class="form-control text-center" type="text" maxlength="4">
                     <button id="generateBtn" class="generate-btn" onclick="getRandomNo()">Generate Pin</button>
                 </div>
             </div>
+
+            <!-- Pin Matcher -->
             <div class="col-md-6">
                 <div class="input-section half-width">
                     <input id="randomNoVerify" class="form-control text-center" type="text">
@@ -47,16 +50,18 @@
                                 </div>
                                 <div>
                                     <button id="submitBtn" type="submit" class="submit-btn">Submit</button>
-                                    <p class="action-left"><span id="tryCount">2</span> try left</p>
+                                    <p class="action-left"><span id="tryCount">3</span> try left</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Alert after form Submission -->
                 <div class="notify-section">
                     <p class="notify">❌ Pin Didn't Match, Please try again</p>
                     <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
                 </div>
+                <!-- External JavaScript Link -->
                 <script src="js/scripts.js"></script>
 </body>
 
